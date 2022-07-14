@@ -1,6 +1,6 @@
 import { Kaitlente } from "./Kaitlente.js";
 
-const kaitlentciuKiekis = 3;
+const kaitlentciuKiekis = 5;
 
 const titleDOM = document.querySelector('.title');
 titleDOM.innerText = `Dirbtuve (${kaitlentciuKiekis})`;
@@ -26,6 +26,7 @@ if (document.querySelector('.karsta')) {
 for (let i = 1; i <= kaitlentciuKiekis; i++) {
     const irenginys = new Kaitlente(i);
     irenginys.render();
+    irenginys.enableClicks();
 }
 
 console.log([document.querySelector('main')]);
